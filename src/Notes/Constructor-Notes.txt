@@ -1,0 +1,34 @@
+Constructor in Inheritance
+
+In case of single inheritance compiler always make object of parent class first. In this example you can
+see we are creating child class reference and object but compiler calls parent class constructor before calling 
+the child class constructor.
+
+class Constructor {
+	Constructor() {
+		System.out.println("This is super class constructor");
+	}
+}
+
+public class SubConstructor extends Constructor {
+	SubConstructor() {
+		System.out.println("This is sub class constructor");
+	}
+
+	public static void main(String[] args) {
+		SubConstructor sc = new SubConstructor();
+	}
+}
+
+Output : This is super class constructor
+         This is sub class constructor
+
+ If we create parent class reference then also it will work same as in above example.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
